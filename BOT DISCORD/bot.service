@@ -1,0 +1,11 @@
+[Unit]
+Description=Discord Bot
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/node/bot.js ini
+ExecStop=/usr/bin/node/bot.js fin
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target

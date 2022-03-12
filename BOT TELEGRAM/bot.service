@@ -1,0 +1,11 @@
+[Unit]
+Description=Telegram Bot
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/bot.sh ini
+ExecStop=/usr/bin/bot.sh fin
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
